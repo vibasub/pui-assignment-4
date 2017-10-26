@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Establish title for HTML page. Link CSS & JS files. Pull in fonts used
+        on page. -->
+<head>
+    <title>Bun Bun Bake Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+
+<!-- First part of body element includes title of page, number ticker of current items in
+      cart, navigation menu, and page tagline. -->
+<body>
+        <header>
+            <div class="header">
+                <h1>Bun Bun Bake Shop</h1>
+              <nav>
+                    <div id = "currentAmount"></div>
+                        <div class="navmenu">
+                          <ul>
+                          <li><a href="./index.html">Home</a></li>
+                          <li><a href="./aboutus.html">About Us</a></li>
+                          <li><a href="./flavors.html">Flavors</a></li>
+                          <li><a href="./shop.html">Shop</a></li>
+                          </ul>
+                        </div>
+                      </nav>
+
+                    <div id ="tagline">
+                        The sweetest buns you'll ever taste...
+                    </div>
+                  </div>
+        </header>
+
+ <!-- Second part of body element contains a title, image, and text description of the
+      flavor. -->
+              <div class="product-container">
+                  <div class="flavor-image">
+                      <div class="title-container">
+                          <h2> Maple Apple Pecan</h2>
+                      </div>
+                    <!--Image taken from http://www.jacquelynclark.com/2016/10/20/apple-pecan-cinnamon-rolls-two-ways/-->
+                    <img id = "maple_apple_pecan" src="img/maple_apple_pecan.jpg" style="width:500px; height:400px">
+                        <p class = "product-text"> Our Maple Apple Pecan cinnamon roll is perfect for the fall.<br/>
+                        The crunchiness of the pecans and the crisp, tart apple pieces <br/>
+                        make for an irresistible combination. Grab this roll with our<br/>
+                        Pumpkin Spice chai for a heavenly treat.
+                        </p>
+                  <br>
+                  <br>
+
+ <!-- Quantity container contains a dropdown specifiying the quantity chosen from
+      one through six, radio buttons specifying the package type, and two additional
+      flavor dropdowns if package type chosen is half-dozen or dozen.-->
+                  <div id = "quantity-container" class = "wrapper-dropdown">
+
+                  <div id="numberOfType">
+                    <p> Quantity </p>
+                        <select id = "numberOfQuantity">
+                          <option type = "dropdown" name = "quantity" value="1">1</option>
+                          <option type = "dropdown" name = "quantity" value="2">2</option>
+                          <option type = "dropdown" name = "quantity" value="3">3</option>
+                          <option type = "dropdown" name = "quantity" value="4">4</option>
+                          <option type = "dropdown" name = "quantity" value="5">5</option>
+                          <option type = "dropdown" name = "quantity" value="6">6</option>
+                        </select>
+                  </div>
+
+                    <form>
+                      <div id="type-container">
+                        <input type="radio" name="amount" value="single">Single<br>
+                        <input type="radio" name="amount" value="half-dozen">Half-Dozen<br>
+                        <input type="radio" name="amount" value="dozen">Dozen<br>
+                      </div>
+                    </form>
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+                  <div id="totalprice">
+                    <p></p>
+                  </div>
+
+                  <div id="additional-flavors">
+                    <p> Please select up to two additional flavors.</p>
+
+                  <div id="flavor-dropdown1">
+                    <select id="flavor-select1">
+                        <option name = "flavor" value="">Select Flavor</option>
+                        <option name = "flavor" value="Maple Apple Pecan">Maple Apple Pecan</option>
+                        <option name = "flavor" value="Divine Bacon">Divine Bacon</option>
+                        <option name = "flavor" value="Delectable Walnut">Delectable Walnut</option>
+                        <option name = "flavor" value="Original (Gluten Free)">Original (Gluten Free)</option>
+                        <option name = "flavor" value="Original (Vegan)">Original (Vegan)</option>
+                        <option name = "flavor" value="Bun Bun Original">Bun Bun Original</option>
+                        <option name = "flavor" value="Pumpkin Spice">Pumpkin Spice</option>
+                        <option name = "flavor" value="Caramel Pecan">Caramel Pecan</option>
+                        <option name = "flavor" value="Carrot Cake">Carrot Cake</option>
+                        <option name = "flavor" value="Old-Fashioned Buttermilk">Old-Fashioned Buttermilk</option>
+                        <option name = "flavor" value="Strawberry Rhubarb">Strawberry Rhubarb</option>
+                        <option name = "flavor" value="Birthday Cake">Birthday Cake</option>
+                        <option name = "flavor" value="Lemon Lavender">Lemon Lavender</option>
+                        <option name = "flavor" value="Cranberry">Cranberry</option>
+                        <option name = "flavor" value="Blackberry">Blackberry</option>
+                      </select>
+                  </div>
+
+                  <div id="flavor-dropdown2">
+                      <select id="flavor-select2">
+                        <option name = "flavor" value="">Select Flavor</option>
+                        <option name = "flavor" value="Maple Apple Pecan">Maple Apple Pecan</option>
+                        <option name = "flavor" value="Divine Bacon">Divine Bacon</option>
+                        <option name = "flavor" value="Delectable Walnut">Delectable Walnut</option>
+                        <option name = "flavor" value="Original (Gluten Free)">Original (Gluten Free)</option>
+                        <option name = "flavor" value="Original (Vegan)">Original (Vegan)</option>
+                        <option name = "flavor" value="Bun Bun Original">Bun Bun Original</option>
+                        <option name = "flavor" value="Pumpkin Spice">Pumpkin Spice</option>
+                        <option name = "flavor" value="Caramel Pecan">Caramel Pecan</option>
+                        <option name = "flavor" value="Carrot Cake">Carrot Cake</option>
+                        <option name = "flavor" value="Old-Fashioned Buttermilk">Old-Fashioned Buttermilk</option>
+                        <option name = "flavor" value="Strawberry Rhubarb">Strawberry Rhubarb</option>
+                        <option name = "flavor" value="Birthday Cake">Birthday Cake</option>
+                        <option name = "flavor" value="Lemon Lavender">Lemon Lavender</option>
+                        <option name = "flavor" value="Cranberry">Cranberry</option>
+                        <option name = "flavor" value="Blackberry">Blackberry</option>
+                      </select>
+                  </div>
+                  </div>
+
+ <!-- Quantity container contains a dropdown specifiying the quanty, radio buttons
+      specifying the package type, and two additional flavor dropdowns if package
+      type chosen is half-dozen or dozen.-->
+                  <div id="checkout-button">
+                      <a href="shop.html"> <button id= "checkout-button" style="height:75px; width:125px">Add to Cart</button></a>
+                  </div>
+                  </div>
+                  </div>
+              </div>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,226 @@
+
+/*Universal Styles for elements*/
+
+/* Set body so padding and border
+   are included in element dimenseions*/
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+
+/*Set background image to screen width, center
+  text, and introduce Raleway as body font.*/
+body {
+
+    background-image: url("img/cinnamonroll1.jpg");
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Raleway , sans-serif;
+}
+
+/* Set header to white background with no margin
+   on the top. Also make header 80% opaque*/
+header{
+    text-align: center;
+    background-color: white;
+    opacity: 0.80;
+    margin-top: 0px;
+}
+
+/* Set Lobster as font family for h1*/
+h1{
+    font-family: 'Lobster' , cursive;
+    font-size: 72px;
+    font-weight:100;
+}
+
+/* Set Raleway as font family for h2*/
+h2{
+    font-family: 'Raleway' , sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+/*Set Raleway as font family for p elements.
+  Increase line height between lines of content.*/
+p{
+    font-family: Raleway , sans-serif;
+    font-size: 16px;
+    text-align:center;
+    line-height: 30px;
+}
+
+/*Change link color while hovering over button,
+  if link is active or if previously visited*/
+a:visited {
+    color: black;
+}
+
+a:link{
+    color: black;
+}
+
+a:hover {
+    color: grey;
+}
+
+a:focus {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Class Styles*/
+
+/*Add tagline to header. Set font, size,
+  align text, and add padding*/
+
+#tagline {
+    font-family: 'Lobster' , cursive;
+    font-size: 22px;
+    text-align: center;
+    position:static;
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+
+
+
+/*Properties for nav menu unordered
+  list. Eliminate bullets*/
+.navmenu ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+/* Properties for items in nav menu.
+   Display all links in one line. Include
+   padding*/
+.navmenu li {
+    text-align:center;
+    font-family: 'Raleway' , sans-serif;
+    font-size: 24px;
+    display: inline;
+    padding: 5px 20px;
+}
+
+/*Properties for container that holds
+  all flavor information*/
+.flavors-container{
+    background-color: #e9967a;
+    width: 100%;
+    opacity: 0.85;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+/* Properties for content within
+   class button-line and button
+   elements.*/
+.button-line, button{
+    font-family: Lobster , cursive;
+    font-size: 24px;
+    background-color: #fffff0;
+    margin: 15px;
+    padding: 15px 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+/*Layout for container that holds
+  title of each flavor.*/
+.title-container, h2{
+    text-align: center;
+    justify-content: center;
+    margin: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*Layout for container that holds
+  all info about each product*/
+.product-container{
+    background-color: #e9967a;
+    width: 100%;
+    opacity:.95;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    align-content: center;
+}
+
+/*Create class to style each flavor
+  image*/
+.flavor-image{
+margin-top: 20px;
+padding-bottom: 250px;
+border: 3px solid white;
+}
+
+/*Set margin for flavor-image and
+  paragraph element*/
+.flavor-image, p{
+margin-top: 30px;
+}
+
+#type-container, form{
+    text-align: center;
+    line-height: 30px;
+}
+
+/*Properties for flavor button on product
+  detail page. Set buttons to align next
+  to each other.*/
+#checkout-button, a{
+    font-family: Raleway , sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    text-align: center;
+    line-height: 23px;
+    padding-top: 10px;
+    padding-right: 20px;
+    display: inline-block;
+    margin-left: 20px;
+    opacity: 0.95;
+}
+
+#type-container{
+
+}
+
+/*Properties for footer on home page.*/
+.footer{
+    position: absolute;
+    text-align: center;
+    bottom:0;
+    width:100%;
+    height: 100px;
+    left:0;
+    background-color: #efefef;
+    opacity:.87;
+    line-height: 25px;
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Establish title for HTML page. Link CSS & JS files. Pull in fonts used
+        on page. -->
+<head>
+    <title>Bun Bun Bake Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+ <!-- First part of body element includes title of page, number ticker of current items in
+      cart, navigation menu, and page tagline. -->
+  <body>
+        <header>
+            <div class="header">
+                <h1>Bun Bun Bake Shop</h1>
+                      <nav>
+                        <div id = "currentAmount"></div>
+                            <div class="navmenu">
+                            <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./aboutus.html">About Us</a></li>
+                            <li><a href="./flavors.html">Flavors</a></li>
+                            <li><a href="./shop.html">Shop</a></li>
+                            </ul>
+                        </div>
+                      </nav>
+
+                    <div id ="tagline">
+                        The sweetest buns you'll ever taste...
+                    </div>
+            </div>
+        </header>
+
+<!-- Second part of body element includes shopping cart information- flavor, package,
+     quantity, price and remove button. -->
+        <div class="flavors-container">
+          <div class="flavors-grid">
+                      <div class="title-container">
+                          <h2 id="shopTitle"> Shopping Cart</h2>
+                      </div>
+
+                      <table id="shoptable">
+                        <tr>
+                        <div id = "tableHeader">
+                        <th>Flavor</th>
+                        <th>Package Type</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Remove</th>
+                        </div>
+                        </tr>
+
+                        <div id="row"></div>
+
+
+<!-- Check out button for shopping cart-->
+              </div>
+                <a href="shop.html"> <button id= "checkout-button">Confirm Purchase</button></a>
+             </div>
+  </body>
+</html>
